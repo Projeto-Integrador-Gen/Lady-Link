@@ -46,7 +46,7 @@ public class Postagem {
 	private LocalDateTime data;
 	
 	@ManyToOne
-	@JsonIgnoreProperties("Postagem")
+	@JsonIgnoreProperties("usuario")
 	private Usuario usuario;
 
 	public Usuario getUsuario() {
@@ -58,7 +58,7 @@ public class Postagem {
 	}
 
 	@ManyToOne
-	@JsonIgnoreProperties("Postagem")
+	@JsonIgnoreProperties("postagem")
 	private Tema tema;
 
 	public Tema getTema() {
